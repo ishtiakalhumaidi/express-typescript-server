@@ -13,7 +13,7 @@ const initDB = async () => {
             name VARCHAR(100) NOT NULL,
             role VARCHAR(50) NOT NULL,
             email VARCHAR(100) UNIQUE NOT NULL,
-            password TEXT NOT NULL,
+            password TEXT   ,
             age INT,
             phone VARCHAR(15),
             address TEXT,

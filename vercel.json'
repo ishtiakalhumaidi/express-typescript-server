@@ -1,0 +1,15 @@
+        {
+          "version": 2,
+          "builds": [
+            {
+              "src": "dist/server.js", // Path to your Express app's entry file
+              "use": "@vercel/node"
+            }
+          ],
+          "routes": [
+            {
+              "src": "/(.*)",
+              "dest": "dist/server.js"
+            }
+          ]
+        }
